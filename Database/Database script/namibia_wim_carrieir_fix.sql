@@ -224,3 +224,15 @@ and CARRIER_WIM_NUMBER_TX = '9414';
 
 commit;
 
+
+update /*+ PARALLEL(F 8) */ fa_owner.revenue_master_farm
+set CARRIER_WIM_NUMBER_TX = 'A531',
+AUDIT_UPDATE_DT = systimestamp,
+AUDIT_UPDATE_USER_NAME_TX = 'COXXX_Namibia_Wim_Update'
+where cdt_system_cd = 'SRC_SYS_CD_EUROSYS_NA'
+and gl_period_year_nr in ('2021','2020','2019','2018')
+and LOCAL_CARRIER_ID_TX ='320016'
+and CARRIER_WIM_NUMBER_TX = '9415';
+
+commit;
+
