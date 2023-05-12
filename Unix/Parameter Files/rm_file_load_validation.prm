@@ -1,0 +1,7 @@
+[GLOBAL]
+$DBConnection_Src=phx_rm_pm_user
+$DBConnection_Tgt=phx_rm_pm_user
+$DBConnection_lkp=phx_rm_pm_user
+$PMSuccessEmailUser=#MAUSWarehouseETLTeam@hub.wmmercer.com
+$PMFailureEmailUser=#MAUSWarehouseETLTeam@hub.wmmercer.com
+
